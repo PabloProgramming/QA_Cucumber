@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="cucumberprojecttemplate [file:/Users/pablo.montalvo/Library/CloudStorage/OneDrive-MercatorITSolutionsLtd/QA%20Tester%20Learning/QA_Cucumber/CucumberProjectTemplate/]" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="DisplayModuleName">
+    <option name="name" value="qacohortproject" />
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/../../target/scala-2.13/classes" />
+    <output-test url="file://$MODULE_DIR$/../../target/scala-2.13/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/test/scala" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: scala-sdk-2.13.12" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-java:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-io:commons-io:2.16.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-api:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-chrome-driver:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-devtools-v135:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-devtools-v136:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-devtools-v137:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-edge-driver:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-firefox-driver:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-ie-driver:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-remote-driver:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-safari-driver:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-support:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jspecify:jspecify:1.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.auto.service:auto-service-annotations:1.1.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-chromium-driver:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-json:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-manager:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-http:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.guava:guava:33.4.8-jre:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-api:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-context:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-exporter-logging:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-common:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-trace:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: net.bytebuddy:byte-buddy:1.17.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-os:4.33.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.guava:failureaccess:1.0.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.errorprone:error_prone_annotations:2.36.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.j2objc:j2objc-annotations:3.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-metrics:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-logs:1.50.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.commons:commons-exec:1.4.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:cucumber-scala_2.13:8.11.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:cucumber-junit:7.23.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: junit:junit:4.13.2:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:cucumber-core:7.23.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.apiguardian:apiguardian-api:1.1.2:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-core_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-featurespec_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-flatspec_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-freespec_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-funsuite_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-funspec_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-propspec_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-refspec_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-wordspec_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-diagrams_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-matchers-core_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-shouldmatchers_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-mustmatchers_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scala-lang:scala-reflect:2.13.12:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.hamcrest:hamcrest-core:1.3:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:cucumber-gherkin:7.23.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:cucumber-gherkin-messages:7.23.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:messages:27.2.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:testng-xml-formatter:0.3.1:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:tag-expressions:6.1.2:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:cucumber-expressions:18.0.1:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:datatable:7.23.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:cucumber-plugin:7.23.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:docstring:7.23.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:html-formatter:21.10.1:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:junit-xml-formatter:0.7.1:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:ci-environment:10.0.1:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-compatible:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalactic:scalactic_2.13:3.2.19:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scala-lang.modules:scala-xml_2.13:2.1.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:gherkin:32.1.1:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: io.cucumber:query:13.3.0:jar" level="project" />
+  </component>
+</module>
