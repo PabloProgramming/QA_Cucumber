@@ -1,3 +1,4 @@
+@smoke @login
 Feature: Login Page
 
   # Use background feature to remove Given duplicates

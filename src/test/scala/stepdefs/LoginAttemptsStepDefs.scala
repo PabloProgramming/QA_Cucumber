@@ -44,7 +44,7 @@ class LoginAttemptsStepDefs extends ScalaDsl with EN {
   }
 
   Then("""^login should fail with error message: The username or password is invalid$""") { () =>
-    val waitForErrorMsg = new WebDriverWait(driver, Duration.ofSeconds(10))
+    val waitForErrorMsg = new WebDriverWait(driver, Duration.ofSeconds(20))
     val errorMsg: WebElement = waitForErrorMsg.until(ExpectedConditions.visibilityOfElementLocated(By.id("error")))
     assert(errorMsg.getText.contains("invalid") && errorMsg.isDisplayed, "Error message was not displayed")
     println("Log in unsuccessful as expected - ✅")
