@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   "org.seleniumhq.selenium" % "selenium-java" % "4.33.0",
   "org.scalatest" %% "scalatest" % "3.2.19" % Test,
   "junit" % "junit" % "4.13.2" % Test,
-  "commons-io" % "commons-io" % "2.16.1"
+  "commons-io" % "commons-io" % "2.16.1",
+  "net.bytebuddy" % "byte-buddy" % "1.14.11", // added later
+  "net.java.dev.jna" % "jna" % "5.13.0" // added later
 )
 

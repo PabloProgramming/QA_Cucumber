@@ -19,6 +19,8 @@
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.12:jar" level="project" />
     <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-java:4.33.0:jar" level="project" />
     <orderEntry type="library" name="sbt: commons-io:commons-io:2.16.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: net.bytebuddy:byte-buddy:1.17.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: net.java.dev.jna:jna:5.13.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-api:4.33.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-chrome-driver:4.33.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-devtools-v135:4.33.0:jar" level="project" />
@@ -45,7 +47,6 @@
     <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:1.50.0:jar" level="project" />
     <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk-trace:1.50.0:jar" level="project" />
     <orderEntry type="library" name="sbt: io.opentelemetry:opentelemetry-sdk:1.50.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: net.bytebuddy:byte-buddy:1.17.5:jar" level="project" />
     <orderEntry type="library" name="sbt: org.seleniumhq.selenium:selenium-os:4.33.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.guava:failureaccess:1.0.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava:jar" level="project" />
