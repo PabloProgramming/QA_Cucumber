@@ -5,8 +5,9 @@ import org.junit.runner.RunWith
 
 @RunWith(classOf[Cucumber])
 @CucumberOptions(
-  features   = Array("src/test/resources/features"),            // src/test/resources/features
+  features   = Array("classpath:features"),            // src/test/resources/features
   glue       = Array("stepdefs", "support"),
+  // tags       = "@wip and not @smoke",
   plugin     = Array("pretty",
     "html:target/cucumber-report.html"),
   monochrome = true

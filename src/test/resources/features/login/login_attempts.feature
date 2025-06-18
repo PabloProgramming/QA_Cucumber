@@ -1,3 +1,4 @@
+@smoke @login
 Feature: Login Functionality
 
   Background:
