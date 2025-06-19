@@ -1,14 +1,64 @@
 package stepdefs
 
 import io.cucumber.scala.{EN, ScalaDsl}
-import org.openqa.selenium.{By, JavascriptExecutor, WebDriver, WebElement}
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.support.ui.{ExpectedConditions, WebDriverWait}
-
-import java.time.Duration
+import locators.FormLocators.{expectedPageHeader, formPageHeader, submit}
+import locators.FormSubmittedHeader.{expectedHeader, formSubmittedHeader}
+import pages.FormPage._
+import pages.FormSubmittedPage.verifyHeader
+import testdata.FormCompletionData.{emailText, firstNameText, lastNameText, mobileNumberText}
 
 class FormSubmissionStepDefs extends ScalaDsl with EN {
 
+  Given("""^I am on the practice form page$""") { () =>
+    browserLaunch()
+  }
+
+  When("""^I enter valid data into all required fields$""") { () =>
+    inputFirstName(firstNameText)
+    inputLastName(lastNameText)
+    inputEmail(emailText)
+    inputMobileNumber(mobileNumberText)
+    inputDateOfBirth()
+    println("required fields")
+  }
+
+  And("""^I select a gender and a hobby$""") { () =>
+    selectGender("label[for='gender-radio-1']")
+    selectHobby("label[for='hobbies-checkbox-1']")
+    println("more fields")
+
+  }
+
+  And("""^I submit the form$""") { () =>
+    buttonSubmit(submit)
+    println("click submit")
+  }
+
+  Then("""^I should see a confirmation message$""") { () =>
+    verifyHeader(formSubmittedHeader, expectedHeader)
+    println("form submitted")
+  }
+
+  When("""^I leave required fields empty$""") { () =>
+    println("Intentionally left required fields empty.")
+  }
+
+  Then("""^I should not be able to submit the form$""") { () =>
+    verifyHeader(formPageHeader, expectedPageHeader)
+    println("form submitted")
+  }
+
+
+
+
+
+
+
+
+
+  // BEFORE REFACTOR ALL HERE ⬇️
+
+  /*
   val driver: WebDriver = new ChromeDriver()
   val jsExecutor: JavascriptExecutor = driver.asInstanceOf[JavascriptExecutor]
 
@@ -62,6 +112,6 @@ class FormSubmissionStepDefs extends ScalaDsl with EN {
     val practiceFormH1: WebElement = driver.findElement(By.tagName("h1"))
     assert(practiceFormH1.isDisplayed, "Form was submitted despite missing fields - ❌")
     println("Form was not submitted as expected - ✅")
-  }
+  }*/
 
 }
