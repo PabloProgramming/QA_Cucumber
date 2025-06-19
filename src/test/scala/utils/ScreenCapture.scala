@@ -1,0 +1,6 @@
+package utils
+
+object ScreenCapture {
+
+
+}
