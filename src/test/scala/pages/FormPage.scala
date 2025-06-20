@@ -1,10 +1,13 @@
 package pages
 
-import locators.FormLocators.{dateOfBirth, email, firstName, genderMale, hobbySport, lastName, mobileNumber, subject, submit, suggestions}
+import locators.FormLocators.{chooseFile, currentAddress, dateOfBirth, email, firstName, genderMale, hobbySport, lastName, mobileNumber, stateDropDown, subject, submit, suggestions}
 import org.openqa.selenium.{By, WebElement}
 import testdata.FormCompletionData.dateOfBirthText
 import utils.Autocomplete.selectSuggestionByText
-import utils.WaitUtils.waitForElementVisible
+import utils.Dropdown.{clickOption, openDropdown}
+import utils.WaitUtils.{setImplicitWait, waitForElementClickable, waitForElementVisible}
+
+import scala.jdk.CollectionConverters.CollectionHasAsScala
 
 object FormPage extends BasePage {
 
@@ -43,6 +46,18 @@ object FormPage extends BasePage {
     selectSuggestionByText(driver, "English")
   }
 
+  def uploadFile(path: String): Unit = {
+    inputText(chooseFile, path)
+  }
+
+  def inputCurrentAddress(text: String): Unit = {
+    inputText(currentAddress, text)
+  }
+
+  def selectDropdownOption(dropDownLocator: By, optionText: String): Unit = {
+    openDropdown(dropDownLocator)
+    clickOption(optionText)
+  }
 
   def buttonSubmit(submitLocator: By): Unit = {
     jsExecutorLaunch().executeScript("arguments[0].scrollIntoView(true);", getWebElement(submitLocator))

@@ -1,11 +1,11 @@
 package stepdefs
 
 import io.cucumber.scala.{EN, ScalaDsl}
-import locators.FormLocators.{expectedPageHeader, formPageHeader, subject, submit, suggestions}
+import locators.FormLocators.{cityDropDown, expectedPageHeader, formPageHeader, stateDropDown, subject, submit, suggestions}
 import locators.FormSubmittedHeader.{expectedHeader, formSubmittedHeader}
 import pages.FormPage._
 import pages.FormSubmittedPage.verifyHeader
-import testdata.FormCompletionData.{emailText, firstNameText, lastNameText, mobileNumberText}
+import testdata.FormCompletionData.{cityCheckText, currentAddressText, emailText, firstNameText, lastNameText, mobileNumberText, photoPath, stateCheckText}
 import utils.ScreenCapture.takeScreenshot
 import utils.WaitUtils.waitForElementVisible
 
@@ -26,6 +26,10 @@ class FormSubmissionStepDefs extends ScalaDsl with EN {
     inputMobileNumber(mobileNumberText)
     inputDateOfBirth()
     inputSubject("en")
+    uploadFile(photoPath)
+    inputCurrentAddress(currentAddressText)
+    selectDropdownOption(stateDropDown, stateCheckText)
+    selectDropdownOption(cityDropDown, cityCheckText)
     println("required fields")
   }
 

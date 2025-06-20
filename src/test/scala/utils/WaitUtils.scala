@@ -24,6 +24,11 @@ object WaitUtils {
     wait.until(ExpectedConditions.visibilityOf(element))
   }
 
+  def waitForElementClickable(driver: WebDriver, element: WebElement, timeoutSeconds: Long): WebElement = {
+    val wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds))
+    wait.until(ExpectedConditions.elementToBeClickable(element))
+  }
+
   /**
    * Fluent wait for a WebElement with custom polling interval and ignoring exceptions.
    * Example use: wait for element to be clickable or any custom condition.
