@@ -1,9 +1,9 @@
-@wip
 Feature: Form Submission
 
   Background:
     Given I am on the practice form page
 
+  @Form @Smoke
   Scenario: Successful form submission with valid data
     When I enter valid data into all required fields
     And I select a gender and a hobby
