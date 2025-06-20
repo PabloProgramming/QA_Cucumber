@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
   "junit" % "junit" % "4.13.2" % Test,
   "commons-io" % "commons-io" % "2.16.1",
   "net.bytebuddy" % "byte-buddy" % "1.14.11", // added later
-  "net.java.dev.jna" % "jna" % "5.13.0" // added later
+  "net.java.dev.jna" % "jna" % "5.13.0", // added later
+  "com.novocode" % "junit-interface" % "0.11"   % Test
 )
 

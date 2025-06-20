@@ -1,8 +1,10 @@
 package pages
 
-import locators.FormLocators.{dateOfBirth, email, firstName, genderMale, hobbySport, lastName, mobileNumber, submit}
+import locators.FormLocators.{dateOfBirth, email, firstName, genderMale, hobbySport, lastName, mobileNumber, subject, submit, suggestions}
 import org.openqa.selenium.{By, WebElement}
 import testdata.FormCompletionData.dateOfBirthText
+import utils.Autocomplete.selectSuggestionByText
+import utils.WaitUtils.waitForElementVisible
 
 object FormPage extends BasePage {
 
@@ -35,6 +37,12 @@ object FormPage extends BasePage {
     jsExecutorLaunch().executeScript("arguments[0].scrollIntoView(true);", hobbyOption)
     if (!hobbyOption.isSelected) hobbyOption.click()
   }
+
+  def inputSubject(partialText: String): Unit = {
+    inputText(subject, partialText)
+    selectSuggestionByText(driver, "English")
+  }
+
 
   def buttonSubmit(submitLocator: By): Unit = {
     jsExecutorLaunch().executeScript("arguments[0].scrollIntoView(true);", getWebElement(submitLocator))

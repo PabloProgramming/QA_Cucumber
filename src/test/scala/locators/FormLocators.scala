@@ -14,5 +14,7 @@ object FormLocators {
   val submit: By = By.id("submit")
   val formPageHeader: By = By.tagName("h1")
   val expectedPageHeader: String = "Practice Form"
+  val subject: By = By.id("subjectsInput")
+  val suggestions: By = By.className("subjects-auto-complete__menu")
 
 }
