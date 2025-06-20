@@ -1,16 +1,22 @@
 package stepdefs
 
 import io.cucumber.scala.{EN, ScalaDsl}
-import locators.FormLocators.{expectedPageHeader, formPageHeader, submit}
+import locators.FormLocators.{expectedPageHeader, formPageHeader, subject, submit, suggestions}
 import locators.FormSubmittedHeader.{expectedHeader, formSubmittedHeader}
 import pages.FormPage._
 import pages.FormSubmittedPage.verifyHeader
 import testdata.FormCompletionData.{emailText, firstNameText, lastNameText, mobileNumberText}
+import utils.ScreenCapture.takeScreenshot
+import utils.WaitUtils.waitForElementVisible
+
+import java.io.File
 
 class FormSubmissionStepDefs extends ScalaDsl with EN {
 
   Given("""^I am on the practice form page$""") { () =>
     browserLaunch()
+    waitForElementVisible(driver, getWebElement(subject), 10)
+    println("container ready")
   }
 
   When("""^I enter valid data into all required fields$""") { () =>
@@ -19,6 +25,7 @@ class FormSubmissionStepDefs extends ScalaDsl with EN {
     inputEmail(emailText)
     inputMobileNumber(mobileNumberText)
     inputDateOfBirth()
+    inputSubject("en")
     println("required fields")
   }
 
@@ -26,12 +33,13 @@ class FormSubmissionStepDefs extends ScalaDsl with EN {
     selectGender("label[for='gender-radio-1']")
     selectHobby("label[for='hobbies-checkbox-1']")
     println("more fields")
-
   }
 
   And("""^I submit the form$""") { () =>
     buttonSubmit(submit)
     println("click submit")
+    val resultPageScreenshot: File = takeScreenshot(driver, "/Users/pablo.montalvo/Documents/Screenshots/", s"resultFormPage")
+    println(s"Saved screenshot to: ${resultPageScreenshot.getPath} - ✅")
   }
 
   Then("""^I should see a confirmation message$""") { () =>
@@ -45,7 +53,7 @@ class FormSubmissionStepDefs extends ScalaDsl with EN {
 
   Then("""^I should not be able to submit the form$""") { () =>
     verifyHeader(formPageHeader, expectedPageHeader)
-    println("form submitted")
+    println("form not submmited")
   }
 
 
