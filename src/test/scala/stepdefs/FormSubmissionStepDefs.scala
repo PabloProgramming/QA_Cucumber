@@ -42,8 +42,6 @@ class FormSubmissionStepDefs extends ScalaDsl with EN {
   And("""^I submit the form$""") { () =>
     buttonSubmit(submit)
     println("click submit")
-    val resultPageScreenshot: File = takeScreenshot(driver, "/Users/pablo.montalvo/Documents/Screenshots/", s"resultFormPage")
-    println(s"Saved screenshot to: ${resultPageScreenshot.getPath} - ✅")
   }
 
   Then("""^I should see a confirmation message$""") { () =>

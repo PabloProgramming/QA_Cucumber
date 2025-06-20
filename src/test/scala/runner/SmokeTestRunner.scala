@@ -7,9 +7,9 @@ import org.junit.runner.RunWith
 @CucumberOptions(
   features   = Array("classpath:features"),            // src/test/resources/features
   glue       = Array("stepdefs", "support"),
-  // tags       = "@wip and not @smoke",
+  tags       = "@Smoke",
   plugin     = Array("pretty",
     "html:target/cucumber-report.html"),
   monochrome = true
 )
-class TestRunner // an empty class body is OK
+class SmokeTestRunner // an empty class body is OK
